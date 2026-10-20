@@ -1,0 +1,2099 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="eltronico">
+  <link name="base">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.7" />
+      <inertia ixx="0.0025" ixy="0" ixz="0" iyy="0.004" iyz="0" izz="0.004" />
+    </inertial>
+    <visual name="MainPlate">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/MainPlate.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_MainPlate">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="PiBoss_37__24_5">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PiBoss_37__24_5.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PiBoss_37__24_5">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="PiBoss_37_24_5">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PiBoss_37_24_5.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PiBoss_37_24_5">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="PiBoss_95__24_5">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PiBoss_95__24_5.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PiBoss_95__24_5">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="PiBoss_95_24_5">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PiBoss_95_24_5.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PiBoss_95_24_5">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="ServoPowerPCB">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/ServoPowerPCB.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_ServoPowerPCB">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="ServoBEC6V13A">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/ServoBEC6V13A.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_ServoBEC6V13A">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="PiBuck5V3A">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PiBuck5V3A.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PiBuck5V3A">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="Battery2S600mAh">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/Battery2S600mAh.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_Battery2S600mAh">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="BatteryStrap58_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/BatteryStrap58_0.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_BatteryStrap58_0">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="BatteryStrap96_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/BatteryStrap96_0.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_BatteryStrap96_0">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="HipServoLeftCase">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoLeftCase.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoLeftCase">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipServoLeftEar_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoLeftEar_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoLeftEar_1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipServoLeftRubberGrommet_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoLeftRubberGrommet_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoLeftRubberGrommet_1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipServoLeftEar1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoLeftEar1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoLeftEar1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipServoLeftRubberGrommet1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoLeftRubberGrommet1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoLeftRubberGrommet1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipServoLeftBoss">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoLeftBoss.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoLeftBoss">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipServoLeftCableBoot">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoLeftCableBoot.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoLeftCableBoot">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipServoLeftCable">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoLeftCable.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoLeftCable">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipMotorStandLeft_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipMotorStandLeft_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipMotorStandLeft_1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipMotorBoltLeft_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipMotorBoltLeft_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipMotorBoltLeft_1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipMotorStandLeft1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipMotorStandLeft1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipMotorStandLeft1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipMotorBoltLeft1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipMotorBoltLeft1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipMotorBoltLeft1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipServoRightCase">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoRightCase.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoRightCase">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipServoRightEar_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoRightEar_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoRightEar_1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipServoRightRubberGrommet_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoRightRubberGrommet_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoRightRubberGrommet_1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipServoRightEar1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoRightEar1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoRightEar1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipServoRightRubberGrommet1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoRightRubberGrommet1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoRightRubberGrommet1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipServoRightBoss">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoRightBoss.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoRightBoss">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipServoRightCableBoot">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoRightCableBoot.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoRightCableBoot">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipServoRightCable">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoRightCable.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoRightCable">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipMotorStandRight_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipMotorStandRight_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipMotorStandRight_1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipMotorBoltRight_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipMotorBoltRight_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipMotorBoltRight_1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipMotorStandRight1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipMotorStandRight1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipMotorStandRight1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipMotorBoltRight1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipMotorBoltRight1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipMotorBoltRight1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="FrontMicroCase">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FrontMicroCase.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FrontMicroCase">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="FrontMicroLid">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FrontMicroLid.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FrontMicroLid">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="FrontMicroEar_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FrontMicroEar_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FrontMicroEar_1">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="FrontMicroEar1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FrontMicroEar1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FrontMicroEar1">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="FrontMicroBoss">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FrontMicroBoss.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FrontMicroBoss">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="FrontMicroSpline">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FrontMicroSpline.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FrontMicroSpline">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="MicroMount">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/MicroMount.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_MicroMount">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="PiCaseWallYm38p0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PiCaseWallYm38p0.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PiCaseWallYm38p0">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="PiCaseWallY38p0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PiCaseWallY38p0.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PiCaseWallY38p0">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="PiCaseWallXm80p25">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PiCaseWallXm80p25.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PiCaseWallXm80p25">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="PiCaseWallX109p25">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PiCaseWallX109p25.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PiCaseWallX109p25">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="PiCaseLid">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PiCaseLid.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PiCaseLid">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="MicroMountM3_90">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/MicroMountM3_90.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_MicroMountM3_90">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="MicroMountM3_104">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/MicroMountM3_104.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_MicroMountM3_104">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="Pololu951_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/Pololu951_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_Pololu951_1">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="Pololu951_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/Pololu951_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_Pololu951_2">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixel12PCB_V23">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixel12PCB_V23.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixel12PCB_V23">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelLED_V23_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelLED_V23_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelLED_V23_1">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelLED_V23_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelLED_V23_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelLED_V23_2">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelLED_V23_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelLED_V23_3.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelLED_V23_3">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelLED_V23_4">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelLED_V23_4.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelLED_V23_4">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelLED_V23_5">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelLED_V23_5.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelLED_V23_5">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelLED_V23_6">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelLED_V23_6.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelLED_V23_6">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelLED_V23_7">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelLED_V23_7.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelLED_V23_7">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelLED_V23_8">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelLED_V23_8.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelLED_V23_8">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelLED_V23_9">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelLED_V23_9.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelLED_V23_9">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelLED_V23_10">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelLED_V23_10.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelLED_V23_10">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelLED_V23_11">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelLED_V23_11.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelLED_V23_11">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelLED_V23_12">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelLED_V23_12.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelLED_V23_12">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelTabV23_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelTabV23_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelTabV23_1">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelScrewV23_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelScrewV23_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelScrewV23_1">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelTabV23_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelTabV23_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelTabV23_2">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelScrewV23_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelScrewV23_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelScrewV23_2">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelTabV23_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelTabV23_3.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelTabV23_3">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelScrewV23_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/NeoPixelScrewV23_3.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_NeoPixelScrewV23_3">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="Speaker1890V23">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/Speaker1890V23.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_Speaker1890V23">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="SpeakerCradleV23">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/SpeakerCradleV23.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_SpeakerCradleV23">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="MPU6050BoardV23">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/MPU6050BoardV23.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_MPU6050BoardV23">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="MPU6050MountBossV23_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/MPU6050MountBossV23_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_MPU6050MountBossV23_1">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="MPU6050MountBossV23_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/MPU6050MountBossV23_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_MPU6050MountBossV23_2">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="Pololu1405BodyV23_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/Pololu1405BodyV23_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_Pololu1405BodyV23_1">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="Pololu1405LeverV23_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/Pololu1405LeverV23_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_Pololu1405LeverV23_1">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="Pololu1405MountV23_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/Pololu1405MountV23_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_Pololu1405MountV23_1">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="Pololu1405ScrewV23__87">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/Pololu1405ScrewV23__87.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_Pololu1405ScrewV23__87">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="Pololu1405ScrewV23__73">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/Pololu1405ScrewV23__73.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_Pololu1405ScrewV23__73">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="RaspberryPi4B_STEP_V23">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/RaspberryPi4B_STEP_V23.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_RaspberryPi4B_STEP_V23">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="AdafruitPCA9685_815_STEP_V23">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/AdafruitPCA9685_815_STEP_V23.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_AdafruitPCA9685_815_STEP_V23">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="SpeakerLidPostV23_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/SpeakerLidPostV23_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_SpeakerLidPostV23_1">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="SpeakerLidScrewV23_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/SpeakerLidScrewV23_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_SpeakerLidScrewV23_1">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="SpeakerLidPostV23_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/SpeakerLidPostV23_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_SpeakerLidPostV23_2">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="SpeakerLidScrewV23_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/SpeakerLidScrewV23_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_SpeakerLidScrewV23_2">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="SpeakerLidPostV23_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/SpeakerLidPostV23_3.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_SpeakerLidPostV23_3">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="SpeakerLidScrewV23_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/SpeakerLidScrewV23_3.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_SpeakerLidScrewV23_3">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="Pi4BScrewV23_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/Pi4BScrewV23_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_Pi4BScrewV23_1">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="Pi4BScrewV23_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/Pi4BScrewV23_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_Pi4BScrewV23_2">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="Pi4BScrewV23_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/Pi4BScrewV23_3.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_Pi4BScrewV23_3">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="Pi4BScrewV23_4">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/Pi4BScrewV23_4.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_Pi4BScrewV23_4">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="PiCameraBoardV24">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PiCameraBoardV24.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PiCameraBoardV24">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="PiCameraLensV24">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PiCameraLensV24.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PiCameraLensV24">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="PCA9685ScrewV24_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PCA9685ScrewV24_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PCA9685ScrewV24_1">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="PCA9685ScrewV24_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PCA9685ScrewV24_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PCA9685ScrewV24_2">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="PCA9685ScrewV24_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PCA9685ScrewV24_3.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PCA9685ScrewV24_3">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="PCA9685ScrewV24_4">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PCA9685ScrewV24_4.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PCA9685ScrewV24_4">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="PCA9685BasePostV25_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PCA9685BasePostV25_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PCA9685BasePostV25_1">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="PCA9685BasePostV25_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PCA9685BasePostV25_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PCA9685BasePostV25_2">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="PCA9685BasePostV25_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PCA9685BasePostV25_3.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PCA9685BasePostV25_3">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="PCA9685BasePostV25_4">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PCA9685BasePostV25_4.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PCA9685BasePostV25_4">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="BatteryTrayV25">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/BatteryTrayV25.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_BatteryTrayV25">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="ServoBECCradleV26_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/ServoBECCradleV26_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_ServoBECCradleV26_1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="ServoBECCradleV26_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/ServoBECCradleV26_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_ServoBECCradleV26_2">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="ServoBECCradleV26_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/ServoBECCradleV26_3.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_ServoBECCradleV26_3">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="ServoBECCradleV26_4">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/ServoBECCradleV26_4.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_ServoBECCradleV26_4">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="TorsoCasterScrewV26_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/TorsoCasterScrewV26_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_TorsoCasterScrewV26_1">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="TorsoCasterScrewV26_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/TorsoCasterScrewV26_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_TorsoCasterScrewV26_2">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="TorsoCasterScrewV26_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/TorsoCasterScrewV26_3.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_TorsoCasterScrewV26_3">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="TorsoCasterScrewV26_4">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/TorsoCasterScrewV26_4.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_TorsoCasterScrewV26_4">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="Pololu1405WallSpacerV26">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/Pololu1405WallSpacerV26.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_Pololu1405WallSpacerV26">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="HCSR04ModuleV26">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HCSR04ModuleV26.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HCSR04ModuleV26">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="HCSR04ScrewV26_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HCSR04ScrewV26_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HCSR04ScrewV26_1">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="HCSR04ScrewV26_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HCSR04ScrewV26_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HCSR04ScrewV26_2">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="HCSR04ScrewV26_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HCSR04ScrewV26_3.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HCSR04ScrewV26_3">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="HCSR04ScrewV26_4">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HCSR04ScrewV26_4.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HCSR04ScrewV26_4">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="PiCameraCarrierV27">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PiCameraCarrierV27.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PiCameraCarrierV27">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="PCA9685ServoPlugHipRight">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/PCA9685ServoPlugHipRight.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_PCA9685ServoPlugHipRight">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipPivotBushingLeft">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipPivotBushingLeft.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipPivotBushingLeft">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <visual name="HipPivotBushingRight">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipPivotBushingRight.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipPivotBushingRight">
+        <color rgba="0.16 0.30 0.40 1" />
+      </material>
+    </visual>
+    <collision name="chassis_floor">
+      <origin xyz="0.01075 0 0.193" rpy="0 0 0" />
+      <geometry>
+        <box size="0.2295 0.0795 0.005" />
+      </geometry>
+    </collision>
+    <collision name="chassis_lid">
+      <origin xyz="0.01075 0 0.2425" rpy="0 0 0" />
+      <geometry>
+        <box size="0.2295 0.08075 0.003" />
+      </geometry>
+    </collision>
+    <collision name="chassis_left_wall">
+      <origin xyz="0.00275 -0.038275 0.216" rpy="0 0 0" />
+      <geometry>
+        <box size="0.2135 0.00385 0.0505" />
+      </geometry>
+    </collision>
+    <collision name="chassis_right_wall">
+      <origin xyz="0.00275 0.038275 0.216" rpy="0 0 0" />
+      <geometry>
+        <box size="0.2135 0.00385 0.0505" />
+      </geometry>
+    </collision>
+    <collision name="chassis_rear_wall">
+      <origin xyz="-0.10325 0 0.218" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0025 0.0795 0.046" />
+      </geometry>
+    </collision>
+    <collision name="chassis_front_wall">
+      <origin xyz="0.124 0 0.218" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0044 0.089 0.046" />
+      </geometry>
+    </collision>
+    <collision name="hcsr04_front_module">
+      <origin xyz="0.1337 -0.013 0.232" rpy="0 0 0" />
+      <geometry>
+        <box size="0.015 0.045 0.02" />
+      </geometry>
+    </collision>
+    <collision name="hip_servo_case_left">
+      <origin xyz="0.0196 -0.0245 0.2142" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0404 0.0202 0.0372" />
+      </geometry>
+    </collision>
+    <collision name="hip_servo_case_right">
+      <origin xyz="0.0196 0.0245 0.2142" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0404 0.0202 0.0372" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="front_leg">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.095" />
+      <inertia ixx="0.00055" ixy="0" ixz="0" iyy="0.00055" iyz="0" izz="3e-05" />
+    </inertial>
+    <visual name="FrontMicroHornHub">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FrontMicroHornHub.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FrontMicroHornHub">
+        <color rgba="0.32 0.42 0.52 1" />
+      </material>
+    </visual>
+    <visual name="FrontMicroHornArm">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FrontMicroHornArm.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FrontMicroHornArm">
+        <color rgba="0.32 0.42 0.52 1" />
+      </material>
+    </visual>
+    <visual name="FrontStrut">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FrontStrut.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FrontStrut">
+        <color rgba="0.32 0.42 0.52 1" />
+      </material>
+    </visual>
+    <visual name="FrontServoHornBolt">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FrontServoHornBolt.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FrontServoHornBolt">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="FrontServoHornBoltHead">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FrontServoHornBoltHead.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FrontServoHornBoltHead">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="Pololu951RetractV24">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/Pololu951RetractV24.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_Pololu951RetractV24">
+        <color rgba="0.32 0.42 0.52 1" />
+      </material>
+    </visual>
+    <visual name="RetractCasterScrewV25_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/RetractCasterScrewV25_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_RetractCasterScrewV25_1">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="RetractCasterScrewV25_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/RetractCasterScrewV25_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_RetractCasterScrewV25_2">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <collision name="extensible_leg_proxy_bar">
+      <origin xyz="-0.095500 0.000000 0.000000" rpy="0.00000000 1.57079633 0.00000000" />
+      <geometry>
+        <cylinder length="0.191000" radius="0.009000" />
+      </geometry>
+    </collision>
+    <collision name="extensible_leg_proxy_cap">
+      <origin xyz="-0.191000 0.000000 -0.000000" />
+      <geometry>
+        <sphere radius="0.009000" />
+      </geometry>
+    </collision>
+    <collision name="extensible_leg_proxy_cap">
+      <origin xyz="0.000000 0.000000 0.000000" />
+      <geometry>
+        <sphere radius="0.009000" />
+      </geometry>
+    </collision>
+    <collision name="distal_pololu_951_ball_proxy">
+      <origin xyz="-.205 0 0" />
+      <geometry>
+        <sphere radius="0.0047625" />
+      </geometry>
+    </collision>
+    <collision name="distal_caster_mount_proxy">
+      <origin xyz="-0.201 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.025 0.028 0.02" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="motor_hip_left">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.003" />
+      <inertia ixx="2e-06" ixy="0" ixz="0" iyy="2e-06" iyz="0" izz="2e-06" />
+    </inertial>
+    <visual name="HipServoLeftSpline">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoLeftSpline.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoLeftSpline">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipMotorPinionLeft">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipMotorPinionLeft.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipMotorPinionLeft">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <collision name="hip_pinion_proxy">
+      <origin xyz="0 -0.002 0" rpy="1.57079633 0 0" />
+      <geometry>
+        <cylinder radius="0.0069" length="0.0097" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="motor_hip_right">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.003" />
+      <inertia ixx="2e-06" ixy="0" ixz="0" iyy="2e-06" iyz="0" izz="2e-06" />
+    </inertial>
+    <visual name="HipServoRightSpline">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoRightSpline.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoRightSpline">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipMotorPinionRight">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipMotorPinionRight.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipMotorPinionRight">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <collision name="hip_pinion_proxy">
+      <origin xyz="0 -0.002 0" rpy="1.57079633 0 0" />
+      <geometry>
+        <cylinder radius="0.0069" length="0.0097" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="motor_knee_left">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.003" />
+      <inertia ixx="2e-06" ixy="0" ixz="0" iyy="2e-06" iyz="0" izz="2e-06" />
+    </inertial>
+    <visual name="KneeServoLeftSpline">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeServoLeftSpline.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeServoLeftSpline">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="KneeMotorPinionLeft">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeMotorPinionLeft.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeMotorPinionLeft">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <collision name="knee_pinion_proxy">
+      <origin xyz="0 0 0" rpy="1.57079633 0 0" />
+      <geometry>
+        <cylinder radius="0.0069" length="0.0097" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="motor_knee_right">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.003" />
+      <inertia ixx="2e-06" ixy="0" ixz="0" iyy="2e-06" iyz="0" izz="2e-06" />
+    </inertial>
+    <visual name="KneeServoRightSpline">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeServoRightSpline.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeServoRightSpline">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="KneeMotorPinionRight">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeMotorPinionRight.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeMotorPinionRight">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <collision name="knee_pinion_proxy">
+      <origin xyz="0 0 0" rpy="1.57079633 0 0" />
+      <geometry>
+        <cylinder radius="0.0069" length="0.0097" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="shin_left">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.075" />
+      <inertia ixx="0.0002" ixy="0" ixz="0" iyy="0.0002" iyz="0" izz="5e-05" />
+    </inertial>
+    <visual name="ShinLeft">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/ShinLeft.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_ShinLeft">
+        <color rgba="0.12 0.48 0.34 1" />
+      </material>
+    </visual>
+    <visual name="RearFootLeft">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/RearFootLeft.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_RearFootLeft">
+        <color rgba="0.13 0.16 0.18 1" />
+      </material>
+    </visual>
+    <visual name="FootInsertLeft_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FootInsertLeft_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FootInsertLeft_1">
+        <color rgba="0.13 0.16 0.18 1" />
+      </material>
+    </visual>
+    <visual name="FootScrewLeft_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FootScrewLeft_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FootScrewLeft_1">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="FootInsertLeft_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FootInsertLeft_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FootInsertLeft_2">
+        <color rgba="0.13 0.16 0.18 1" />
+      </material>
+    </visual>
+    <visual name="FootScrewLeft_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FootScrewLeft_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FootScrewLeft_2">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="InterchangeableTPUSoleLeftV29">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/InterchangeableTPUSoleLeftV29.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_InterchangeableTPUSoleLeftV29">
+        <color rgba="0.12 0.48 0.34 1" />
+      </material>
+    </visual>
+    <visual name="FootTibiaM3ClampLeft">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FootTibiaM3ClampLeft.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FootTibiaM3ClampLeft">
+        <color rgba="0.13 0.16 0.18 1" />
+      </material>
+    </visual>
+    <visual name="FootTibiaM3InsertLeft">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FootTibiaM3InsertLeft.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FootTibiaM3InsertLeft">
+        <color rgba="0.13 0.16 0.18 1" />
+      </material>
+    </visual>
+    <collision name="tibia_sweep_capsule_bar">
+      <origin xyz="-0.006555 -0.019000 -0.072065" rpy="0.00000000 2.86960392 -1.90300988" />
+      <geometry>
+        <cylinder length="0.109631" radius="0.010000" />
+      </geometry>
+    </collision>
+    <collision name="tibia_sweep_capsule_cap">
+      <origin xyz="-0.001752 -0.005079 -0.019265" />
+      <geometry>
+        <sphere radius="0.010000" />
+      </geometry>
+    </collision>
+    <collision name="tibia_sweep_capsule_cap">
+      <origin xyz="-0.011358 -0.032921 -0.124865" />
+      <geometry>
+        <sphere radius="0.010000" />
+      </geometry>
+    </collision>
+    <collision name="tpu_foot_proxy">
+      <origin xyz="-0.0175 -0.038 -0.126" rpy="0 0 0" />
+      <geometry>
+        <box size="0.034 0.016 0.026" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="shin_right">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.075" />
+      <inertia ixx="0.0002" ixy="0" ixz="0" iyy="0.0002" iyz="0" izz="5e-05" />
+    </inertial>
+    <visual name="ShinRight">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/ShinRight.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_ShinRight">
+        <color rgba="0.16 0.56 0.40 1" />
+      </material>
+    </visual>
+    <visual name="RearFootRight">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/RearFootRight.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_RearFootRight">
+        <color rgba="0.13 0.16 0.18 1" />
+      </material>
+    </visual>
+    <visual name="FootInsertRight_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FootInsertRight_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FootInsertRight_1">
+        <color rgba="0.13 0.16 0.18 1" />
+      </material>
+    </visual>
+    <visual name="FootScrewRight_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FootScrewRight_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FootScrewRight_1">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="FootInsertRight_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FootInsertRight_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FootInsertRight_2">
+        <color rgba="0.13 0.16 0.18 1" />
+      </material>
+    </visual>
+    <visual name="FootScrewRight_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FootScrewRight_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FootScrewRight_2">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="InterchangeableTPUSoleRightV29">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/InterchangeableTPUSoleRightV29.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_InterchangeableTPUSoleRightV29">
+        <color rgba="0.16 0.56 0.40 1" />
+      </material>
+    </visual>
+    <visual name="FootTibiaM3ClampRight">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FootTibiaM3ClampRight.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FootTibiaM3ClampRight">
+        <color rgba="0.13 0.16 0.18 1" />
+      </material>
+    </visual>
+    <visual name="FootTibiaM3InsertRight">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/FootTibiaM3InsertRight.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_FootTibiaM3InsertRight">
+        <color rgba="0.13 0.16 0.18 1" />
+      </material>
+    </visual>
+    <collision name="tibia_sweep_capsule_bar">
+      <origin xyz="-0.006555 0.019000 -0.072065" rpy="0.00000000 2.86960392 1.90300988" />
+      <geometry>
+        <cylinder length="0.109631" radius="0.010000" />
+      </geometry>
+    </collision>
+    <collision name="tibia_sweep_capsule_cap">
+      <origin xyz="-0.001752 0.005079 -0.019265" />
+      <geometry>
+        <sphere radius="0.010000" />
+      </geometry>
+    </collision>
+    <collision name="tibia_sweep_capsule_cap">
+      <origin xyz="-0.011358 0.032921 -0.124865" />
+      <geometry>
+        <sphere radius="0.010000" />
+      </geometry>
+    </collision>
+    <collision name="tpu_foot_proxy">
+      <origin xyz="-0.0175 0.038 -0.126" rpy="0 0 0" />
+      <geometry>
+        <box size="0.034 0.016 0.026" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="thigh_left">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.14" />
+      <inertia ixx="0.00045" ixy="0" ixz="0" iyy="0.00045" iyz="0" izz="0.00015" />
+    </inertial>
+    <visual name="ThighLeft">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/ThighLeft.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_ThighLeft">
+        <color rgba="0.08 0.43 0.30 1" />
+      </material>
+    </visual>
+    <visual name="KneeServoLeftCase">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeServoLeftCase.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeServoLeftCase">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="KneeServoLeftEar_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeServoLeftEar_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeServoLeftEar_1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="KneeServoLeftEar1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeServoLeftEar1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeServoLeftEar1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="KneeServoLeftBoss">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeServoLeftBoss.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeServoLeftBoss">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="KneeServoLeftCableBoot">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeServoLeftCableBoot.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeServoLeftCableBoot">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="KneeServoLeftCable">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeServoLeftCable.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeServoLeftCable">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipOutputBoltLeftm5_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipOutputBoltLeftm5_0.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipOutputBoltLeftm5_0">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="HipOutputBoltLeft5_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipOutputBoltLeft5_0.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipOutputBoltLeft5_0">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="HipServoLeftOutputLink">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoLeftOutputLink.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoLeftOutputLink">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="KneeBearingLeft">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeBearingLeft.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeBearingLeft">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="KneeCradleBoltV23_Left_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeCradleBoltV23_Left_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeCradleBoltV23_Left_1">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="KneeHeatInsertV23_Left_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeHeatInsertV23_Left_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeHeatInsertV23_Left_1">
+        <color rgba="0.08 0.43 0.30 1" />
+      </material>
+    </visual>
+    <visual name="KneeCradleBoltV23_Left_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeCradleBoltV23_Left_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeCradleBoltV23_Left_2">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="KneeHeatInsertV23_Left_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeHeatInsertV23_Left_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeHeatInsertV23_Left_2">
+        <color rgba="0.08 0.43 0.30 1" />
+      </material>
+    </visual>
+    <visual name="KneeAxleBushingV24_Left_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeAxleBushingV24_Left_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeAxleBushingV24_Left_1">
+        <color rgba="0.08 0.43 0.30 1" />
+      </material>
+    </visual>
+    <visual name="KneeAxleBushingV24_Left_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeAxleBushingV24_Left_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeAxleBushingV24_Left_2">
+        <color rgba="0.08 0.43 0.30 1" />
+      </material>
+    </visual>
+    <collision name="femur_sweep_capsule_bar">
+      <origin xyz="0.000000 -0.016500 -0.036183" rpy="0.00000000 2.71374376 -1.57079633" />
+      <geometry>
+        <cylinder length="0.043534" radius="0.009000" />
+      </geometry>
+    </collision>
+    <collision name="femur_sweep_capsule_cap">
+      <origin xyz="-0.000000 -0.007468 -0.016377" />
+      <geometry>
+        <sphere radius="0.009000" />
+      </geometry>
+    </collision>
+    <collision name="femur_sweep_capsule_cap">
+      <origin xyz="0.000000 -0.025532 -0.055988" />
+      <geometry>
+        <sphere radius="0.009000" />
+      </geometry>
+    </collision>
+    <collision name="knee_servo_case_proxy">
+      <origin xyz="0.0196 -0.0495 -0.0723652426" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0404 0.0202 0.0372" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="thigh_right">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.14" />
+      <inertia ixx="0.00045" ixy="0" ixz="0" iyy="0.00045" iyz="0" izz="0.00015" />
+    </inertial>
+    <visual name="ThighRight">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/ThighRight.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_ThighRight">
+        <color rgba="0.12 0.52 0.36 1" />
+      </material>
+    </visual>
+    <visual name="KneeServoRightCase">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeServoRightCase.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeServoRightCase">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="KneeServoRightEar_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeServoRightEar_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeServoRightEar_1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="KneeServoRightEar1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeServoRightEar1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeServoRightEar1">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="KneeServoRightBoss">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeServoRightBoss.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeServoRightBoss">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="KneeServoRightCableBoot">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeServoRightCableBoot.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeServoRightCableBoot">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="KneeServoRightCable">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeServoRightCable.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeServoRightCable">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="HipOutputBoltRightm5_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipOutputBoltRightm5_0.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipOutputBoltRightm5_0">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="HipOutputBoltRight5_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipOutputBoltRight5_0.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipOutputBoltRight5_0">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="HipServoRightOutputLink">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/HipServoRightOutputLink.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_HipServoRightOutputLink">
+        <color rgba="0.12 0.15 0.18 1" />
+      </material>
+    </visual>
+    <visual name="KneeBearingRight">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeBearingRight.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeBearingRight">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="KneeCradleBoltV23_Right_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeCradleBoltV23_Right_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeCradleBoltV23_Right_1">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="KneeHeatInsertV23_Right_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeHeatInsertV23_Right_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeHeatInsertV23_Right_1">
+        <color rgba="0.12 0.52 0.36 1" />
+      </material>
+    </visual>
+    <visual name="KneeCradleBoltV23_Right_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeCradleBoltV23_Right_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeCradleBoltV23_Right_2">
+        <color rgba="0.72 0.75 0.78 1" />
+      </material>
+    </visual>
+    <visual name="KneeHeatInsertV23_Right_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeHeatInsertV23_Right_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeHeatInsertV23_Right_2">
+        <color rgba="0.12 0.52 0.36 1" />
+      </material>
+    </visual>
+    <visual name="KneeAxleBushingV24_Right_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeAxleBushingV24_Right_1.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeAxleBushingV24_Right_1">
+        <color rgba="0.12 0.52 0.36 1" />
+      </material>
+    </visual>
+    <visual name="KneeAxleBushingV24_Right_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="pybullet_meshes/KneeAxleBushingV24_Right_2.stl" scale=".001 .001 .001" />
+      </geometry>
+      <material name="mat_KneeAxleBushingV24_Right_2">
+        <color rgba="0.12 0.52 0.36 1" />
+      </material>
+    </visual>
+    <collision name="femur_sweep_capsule_bar">
+      <origin xyz="0.000000 0.016500 -0.036183" rpy="0.00000000 2.71374376 1.57079633" />
+      <geometry>
+        <cylinder length="0.043534" radius="0.009000" />
+      </geometry>
+    </collision>
+    <collision name="femur_sweep_capsule_cap">
+      <origin xyz="-0.000000 0.007468 -0.016377" />
+      <geometry>
+        <sphere radius="0.009000" />
+      </geometry>
+    </collision>
+    <collision name="femur_sweep_capsule_cap">
+      <origin xyz="0.000000 0.025532 -0.055988" />
+      <geometry>
+        <sphere radius="0.009000" />
+      </geometry>
+    </collision>
+    <collision name="knee_servo_case_proxy">
+      <origin xyz="0.0196 0.0495 -0.0723652426" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0404 0.0202 0.0372" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="caster_left">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="2e-06" ixy="0" ixz="0" iyy="2e-06" iyz="0" izz="2e-06" />
+    </inertial>
+    <collision name="pololu_951_ball_proxy">
+      <origin xyz="0 0 0" />
+      <geometry>
+        <sphere radius="0.0047625" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="caster_right">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="2e-06" ixy="0" ixz="0" iyy="2e-06" iyz="0" izz="2e-06" />
+    </inertial>
+    <collision name="pololu_951_ball_proxy">
+      <origin xyz="0 0 0" />
+      <geometry>
+        <sphere radius="0.0047625" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="pi_collision_guard">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.002" />
+      <inertia ixx="2e-06" ixy="0" ixz="0" iyy="2e-06" iyz="0" izz="2e-06" />
+    </inertial>
+    <collision name="raspberry_pi4_collision_proxy">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.088 0.057 0.018" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="pi_collision_guard_fixed" type="fixed">
+    <parent link="base" />
+    <child link="pi_collision_guard" />
+    <origin xyz="-.0575 -.00125 .2295" rpy="0 0 0" />
+  </joint>
+  <joint name="hip_left" type="continuous">
+    <parent link="base" />
+    <child link="thigh_left" />
+    <origin xyz="-0.005000 -0.045000 0.214000" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit effort="2.0" velocity="2.0" />
+  </joint>
+  <joint name="hip_right" type="continuous">
+    <parent link="base" />
+    <child link="thigh_right" />
+    <origin xyz="-0.005000 0.045000 0.214000" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit effort="2.0" velocity="2.0" />
+  </joint>
+  <joint name="knee_left" type="continuous">
+    <parent link="thigh_left" />
+    <child link="shin_left" />
+    <origin xyz="0.000000 -0.033000 -0.072365" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit effort="1.5" velocity="2.0" />
+  </joint>
+  <joint name="knee_right" type="continuous">
+    <parent link="thigh_right" />
+    <child link="shin_right" />
+    <origin xyz="0.000000 0.033000 -0.072365" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit effort="1.5" velocity="2.0" />
+  </joint>
+  <joint name="front_pitch" type="revolute">
+    <parent link="base" />
+    <child link="front_leg" />
+    <origin xyz="0.109000 0.000000 0.210000" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit lower="0" upper="1.5707963267948966" effort="0.18" velocity="0.8" />
+  </joint>
+  <joint name="motor_hip_left" type="continuous">
+    <parent link="base" />
+    <child link="motor_hip_left" />
+    <origin xyz="0.019000 -0.049650 0.214000" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.2157" velocity="12.56" />
+  </joint>
+  <joint name="motor_hip_right" type="continuous">
+    <parent link="base" />
+    <child link="motor_hip_right" />
+    <origin xyz="0.019000 0.049650 0.214000" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.2157" velocity="12.56" />
+  </joint>
+  <joint name="motor_knee_left" type="continuous">
+    <parent link="thigh_left" />
+    <child link="motor_knee_left" />
+    <origin xyz="0.024600 -0.018650 -0.072365" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.2157" velocity="12.56" />
+  </joint>
+  <joint name="motor_knee_right" type="continuous">
+    <parent link="thigh_right" />
+    <child link="motor_knee_right" />
+    <origin xyz="0.024600 0.018650 -0.072365" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.2157" velocity="12.56" />
+  </joint>
+  <joint name="caster_left_roll" type="continuous">
+    <parent link="base" />
+    <child link="caster_left" />
+    <origin xyz="0.112000 -0.027000 0.190200" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.02" velocity="30" />
+  </joint>
+  <joint name="caster_right_roll" type="continuous">
+    <parent link="base" />
+    <child link="caster_right" />
+    <origin xyz="0.112000 0.027000 0.190200" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.02" velocity="30" />
+  </joint>
+</robot>

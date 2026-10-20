@@ -47,9 +47,28 @@ Mecatronica/
 │   │   ├── matriz_calidad
 │   │   └── matriz_seleccion
 │   │   └── diseño_conceptual
+├── diseno_detallado
+│   ├── Eltronico.FCStd
+│   ├── motores.pdf
+│   └── piezas
+│       ├── designed
+│       │   ├── battery.FCStd
+│       │   ├── ...
+│       └── internet
+│           ├── adafruit.FCStd
+│           ├── ...
+
+└── simulacion
+    └── pybullet
+        ├── eltronico.urdf
+        ├── pybullet_meshes
+        │   ├── Adafruit.stl
+        │   ├── ...
+        └── simulacion_estatica_escalon.py
 ```
+
 ## Estado del proyecto
 
-Actualmente se ha realizado la evaluación conceptual de alternativas y se ha seleccionado el bípedo para continuar con el diseño detallado. 
+Actualmente se ha realizado la evaluación conceptual de alternativas y se ha seleccionado el bípedo para continuar con el diseño detallado. Se ha añadido el disñeo detallado del modelo, con sus piezas diseñadas en freecad y las selección de motores. También se ha añadido una simulación estática en pybullet. 
 
 Están pendientes la finalización del diseño, validación del mecanismo, el dimensionamiento definitivo de los motores, la integración y las pruebas físicas.
