@@ -7,6 +7,7 @@ Proyecto de la asignatura **Mecatrónica** del **Grado en Ingeniería de Robóti
 - Adrián Manzanares Romera: [Amanza17](https://github.com/Amanza17)
 - Claudia Élez Mencía: [celezm](https://github.com/celezm)
 - Mario Casero Sández: [MarioC05](https://github.com/MarioC05)
+- Rebeca Castilla Puerta: [rumbahuh](https://github.com/rumbahuh)
 
 
 ## Objetivo
