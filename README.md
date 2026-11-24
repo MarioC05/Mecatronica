@@ -9,7 +9,6 @@ Proyecto de la asignatura **Mecatrónica** del **Grado en Ingeniería de Robóti
 - Mario Casero Sández: [MarioC05](https://github.com/MarioC05)
 - Rebeca Castilla Puerta [rumbahuh](https://github.com/rumbahuh)
 
-
 ## Objetivo
 
 Diseñar, fabricar y programar un robot terrestre capaz de **subir al menos un peldaño** de las escaleras del laboratorio III de la URJC, manteniendo la estabilidad y evitando obstáculos durante la aproximación.
