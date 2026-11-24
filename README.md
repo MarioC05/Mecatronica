@@ -7,6 +7,7 @@ Proyecto de la asignatura **Mecatrónica** del **Grado en Ingeniería de Robóti
 - Adrián Manzanares Romera: [Amanza17](https://github.com/Amanza17)
 - Claudia Élez Mencía: [celezm](https://github.com/celezm)
 - Mario Casero Sández: [MarioC05](https://github.com/MarioC05)
+- Rebeca Castilla Puerta [rumbahuh](https://github.com/rumbahuh)
 
 
 ## Objetivo
@@ -43,6 +44,7 @@ Mecatronica/
 ├── planificacion/
 │   ├── diagrama_gantt
 │   └── diagrama_pert
+│   └── planificacion_nov
 ├── diseno_conceptual/
 │   │   ├── matriz_calidad
 │   │   └── matriz_seleccion
@@ -57,7 +59,6 @@ Mecatronica/
 │       └── internet
 │           ├── adafruit.FCStd
 │           ├── ...
-
 └── simulacion
     └── pybullet
         ├── eltronico.urdf
@@ -65,10 +66,20 @@ Mecatronica/
         │   ├── Adafruit.stl
         │   ├── ...
         └── simulacion_estatica_escalon.py
+└── eltronico_ws
+    └── src  
+        ├── eltronico
+        ├── ir
+        └── tui     
 ```
 
 ## Estado del proyecto
 
-Actualmente se ha realizado la evaluación conceptual de alternativas y se ha seleccionado el bípedo para continuar con el diseño detallado. Se ha añadido el disñeo detallado del modelo, con sus piezas diseñadas en freecad y las selección de motores. También se ha añadido una simulación estática en pybullet. 
+Actualmente, se está finalizando el montaje definitivo de las piezas del robot. El montaje de la electrónica está prácticamente finalizado, a expensas de la llegada de una PCB que integra los 2 reguladores de voltaje y algunas resistencias y la integración de un sensor infrarrojo para comandar al robot con un mando ir.
 
-Están pendientes la finalización del diseño, validación del mecanismo, el dimensionamiento definitivo de los motores, la integración y las pruebas físicas.
+Respecto a la programación, se sigue trabajando en el controlador para la subida del escalón y en la migración e integración del código de MQTT y scripts de python a ROS2.
+
+![eltronico](./media/robot_nov.jpeg)
+*Este es el robot a día 19 de noviembre*
+
+En la carpeta [media](./media) se pueden encontrar distintas fotos y videos del montaje del robot y de pruebas de los motores.
