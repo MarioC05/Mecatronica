@@ -1,0 +1,49 @@
+# Acciones del mando IR de Eltronico.
+#
+# Cada botón (ID de mapeo_mando.txt) puede:
+#   - llamar a un servicio:  servicio: /nombre   tipo: paquete/srv/Tipo   peticion: {campo: valor}
+#   - publicar en un topic:  topic: /nombre      tipo: paquete/msg/Tipo   mensaje: {campo: valor}
+# repetir: true -> también actúa mientras se mantiene pulsado (por defecto sólo la primera vez).
+#
+# Los nombres de abajo son PROVISIONALES: todavía no existen en ROS 2 los nodos que
+# los atiendan. Ajustarlos cuando se migre el control. No se asigna la subida de
+# escalón porque no hay maniobra validada para las patas r2.
+
+acciones:
+  BTN_PLAY:            # parar (neutro)
+    servicio: /eltronico/parar
+    tipo: std_srvs/srv/Trigger
+  BTN_5:               # parar, centro del teclado numérico
+    servicio: /eltronico/parar
+    tipo: std_srvs/srv/Trigger
+  BTN_CH:              # habilitar mando
+    servicio: /eltronico/armar
+    tipo: std_srvs/srv/Trigger
+  BTN_MAS:             # activar parada por obstáculo
+    servicio: /eltronico/proteccion_obstaculo
+    tipo: std_srvs/srv/SetBool
+    peticion: {data: true}
+  BTN_MENOS:           # desactivar parada por obstáculo
+    servicio: /eltronico/proteccion_obstaculo
+    tipo: std_srvs/srv/SetBool
+    peticion: {data: false}
+  BTN_2:
+    topic: /eltronico/orden_mando
+    tipo: std_msgs/msg/String
+    mensaje: {data: adelante}
+    repetir: true
+  BTN_8:
+    topic: /eltronico/orden_mando
+    tipo: std_msgs/msg/String
+    mensaje: {data: atras}
+    repetir: true
+  BTN_4:
+    topic: /eltronico/orden_mando
+    tipo: std_msgs/msg/String
+    mensaje: {data: izquierda}
+    repetir: true
+  BTN_6:
+    topic: /eltronico/orden_mando
+    tipo: std_msgs/msg/String
+    mensaje: {data: derecha}
+    repetir: true

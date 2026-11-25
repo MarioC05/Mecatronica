@@ -1,0 +1,50 @@
+(footprint "salida_2p_3p5mm"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+(attr exclude_from_pos_files exclude_from_bom)
+  (descr "Two solder wire holes: pad1 positive, pad2 GND, pitch3.5mm, finished hole1.2mm")
+
+  (property "Reference" "REF**" (at 0 -1.27 0)
+    (layer "F.SilkS")
+    (uuid "19ed21a6-c361-4e9b-84e1-2f0aad657627")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "salida_2p_3p5mm" (at 0 1.27 0)
+    (layer "F.Fab")
+    (uuid "1a9c8795-d057-4cfd-9e00-b1f496fe3fa1")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "8302978b-16d7-448a-bf92-51f63682aa1a")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -1.55 -1.55)
+    (end 1.55 5.05)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "bad9b90e-e391-4682-93c6-789e84c1e76e")
+  )
+
+  (pad "1" thru_hole rect
+    (at 0 0)
+    (size 2.6 2.6)
+    (drill 1.2)
+    (layers "*.Cu" "*.Mask")
+    (uuid "d445f480-a6c6-4508-8a98-6781aaf7a636")
+  )
+
+  (pad "2" thru_hole circle
+    (at 0 3.5)
+    (size 2.6 2.6)
+    (drill 1.2)
+    (layers "*.Cu" "*.Mask")
+    (uuid "b3bd30e5-cc3c-44cc-8b45-9aba9e7a74c0")
+  )
+
+)

@@ -1,0 +1,22 @@
+# Gazebo Harmonic + ROS 2 Jazzy.
+# Consignas en radianes, en el orden definido en joints.
+controller_manager:
+  ros__parameters:
+    update_rate: 50
+    use_sim_time: true
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    forward_position_controller:
+      type: forward_command_controller/ForwardCommandController
+
+forward_position_controller:
+  ros__parameters:
+    joints:
+      - hip_left
+      - knee_left
+      - hip_right
+      - knee_right
+      - front_pitch
+    interface_name: position

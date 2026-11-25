@@ -1,0 +1,1385 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="eltronico">
+  <link name="base">
+    <inertial>
+      <origin xyz="0.01075 0 0.216" />
+      <mass value="0.7" />
+      <inertia ixx="0.0025" ixy="0" ixz="0" iyy="0.004" iyz="0" izz="0.004" />
+    </inertial>
+    <collision name="chassis_floor">
+      <origin xyz="0.01075 0 0.193" rpy="0 0 0" />
+      <geometry>
+        <box size="0.2295 0.0795 0.005" />
+      </geometry>
+    </collision>
+    <collision name="chassis_lid">
+      <origin xyz="0.01075 0 0.2425" rpy="0 0 0" />
+      <geometry>
+        <box size="0.2295 0.08075 0.003" />
+      </geometry>
+    </collision>
+    <collision name="chassis_left_wall">
+      <origin xyz="0.00275 -0.038275 0.216" rpy="0 0 0" />
+      <geometry>
+        <box size="0.2135 0.00385 0.0505" />
+      </geometry>
+    </collision>
+    <collision name="chassis_right_wall">
+      <origin xyz="0.00275 0.038275 0.216" rpy="0 0 0" />
+      <geometry>
+        <box size="0.2135 0.00385 0.0505" />
+      </geometry>
+    </collision>
+    <collision name="chassis_rear_wall">
+      <origin xyz="-0.10325 0 0.218" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0025 0.0795 0.046" />
+      </geometry>
+    </collision>
+    <collision name="chassis_front_wall">
+      <origin xyz="0.124 0 0.218" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0044 0.089 0.046" />
+      </geometry>
+    </collision>
+    <collision name="hip_servo_case_left">
+      <origin xyz="0.028600 -0.018850 0.214000" rpy="0 0 0" />
+      <geometry>
+        <box size="0.040000 0.037200 0.020000" />
+      </geometry>
+    </collision>
+    <collision name="hip_servo_case_right">
+      <origin xyz="0.028600 0.018850 0.214000" rpy="0 0 0" />
+      <geometry>
+        <box size="0.040000 0.037200 0.020000" />
+      </geometry>
+    </collision>
+    <collision name="front_micro_case">
+      <origin xyz="0.09540000000000001 -0.015499999999999998 0.217" rpy="0 0 0" />
+      <geometry>
+        <box size="0.022799999999999997 0.0228 0.012199999999999989" />
+      </geometry>
+    </collision>
+    <visual name="MPU6050MountBossV23_1">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/MPU6050MountBossV23_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="MPU6050MountBossV23_1_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="MPU6050MountBossV23_2">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/MPU6050MountBossV23_2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="MPU6050MountBossV23_2_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelTabV23_1">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/NeoPixelTabV23_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="NeoPixelTabV23_1_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelTabV23_2">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/NeoPixelTabV23_2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="NeoPixelTabV23_2_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="NeoPixelTabV23_3">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/NeoPixelTabV23_3.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="NeoPixelTabV23_3_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="PCA9685BasePostV25_1">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/PCA9685BasePostV25_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="PCA9685BasePostV25_1_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="PCA9685BasePostV25_2">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/PCA9685BasePostV25_2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="PCA9685BasePostV25_2_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="PCA9685BasePostV25_3">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/PCA9685BasePostV25_3.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="PCA9685BasePostV25_3_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="PCA9685BasePostV25_4">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/PCA9685BasePostV25_4.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="PCA9685BasePostV25_4_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="PiCameraCarrierV27">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/PiCameraCarrierV27.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="PiCameraCarrierV27_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="PiCaseLid">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/PiCaseLid.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="PiCaseLid_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="Pololu1405MountV23_1">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/Pololu1405MountV23_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Pololu1405MountV23_1_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="Pololu1405WallSpacerV26">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/Pololu1405WallSpacerV26.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Pololu1405WallSpacerV26_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="ServoBECCradleV26_1">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/ServoBECCradleV26_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="ServoBECCradleV26_1_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="ServoBECCradleV26_2">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/ServoBECCradleV26_2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="ServoBECCradleV26_2_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="ServoBECCradleV26_3">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/ServoBECCradleV26_3.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="ServoBECCradleV26_3_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="ServoBECCradleV26_4">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/ServoBECCradleV26_4.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="ServoBECCradleV26_4_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="SpeakerCradleV23">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/SpeakerCradleV23.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="SpeakerCradleV23_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="SpeakerLidPostV23_1">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/SpeakerLidPostV23_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="SpeakerLidPostV23_1_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="SpeakerLidPostV23_2">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/SpeakerLidPostV23_2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="SpeakerLidPostV23_2_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="SpeakerLidPostV23_3">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/SpeakerLidPostV23_3.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="SpeakerLidPostV23_3_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="V50_RaspberryPi4B_STEP_V23">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_RaspberryPi4B_STEP_V23.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_RaspberryPi4B_STEP_V23_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="V50_PiCameraBoardV24">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_PiCameraBoardV24.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_PiCameraBoardV24_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="V50_PiCameraLensV24">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_PiCameraLensV24.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_PiCameraLensV24_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="V50_AdafruitPCA9685_815_STEP_V23">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_AdafruitPCA9685_815_STEP_V23.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_AdafruitPCA9685_815_STEP_V23_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="V50_PCA9685ServoPlugHipRight">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_PCA9685ServoPlugHipRight.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_PCA9685ServoPlugHipRight_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="V50_MPU6050BoardV23">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_MPU6050BoardV23.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_MPU6050BoardV23_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="V50_Speaker1890V23">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_Speaker1890V23.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_Speaker1890V23_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="V50_FrontMicroCase">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_FrontMicroCase.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_FrontMicroCase_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="V50_FrontMicroLid">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_FrontMicroLid.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_FrontMicroLid_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="V50_FrontMicroEar_1">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_FrontMicroEar_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_FrontMicroEar_1_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="V50_FrontMicroEar1">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_FrontMicroEar1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_FrontMicroEar1_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="V50_FrontMicroBoss">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_FrontMicroBoss.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_FrontMicroBoss_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="V50_FrontMicroSpline">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_FrontMicroSpline.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_FrontMicroSpline_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="HipLeftCase">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/HipLeftCase.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="HipLeftCase_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="HipLeftMountEars">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/HipLeftMountEars.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="HipLeftMountEars_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="HipLeftBoss">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/HipLeftBoss.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="HipLeftBoss_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="HipLeftCableExit">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/HipLeftCableExit.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="HipLeftCableExit_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="HipRightCase">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/HipRightCase.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="HipRightCase_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="HipRightMountEars">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/HipRightMountEars.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="HipRightMountEars_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="HipRightBoss">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/HipRightBoss.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="HipRightBoss_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="HipRightCableExit">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/HipRightCableExit.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="HipRightCableExit_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="Engranaje_superior">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/Engranaje_superior.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Engranaje_superior_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="Tornillo_engranaje_servo">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/Tornillo_engranaje_servo.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Tornillo_engranaje_servo_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="chasis_r3">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/chasis_r3.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="chasis_r3_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="geometria_soporte_eje_exterior">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/geometria_soporte_eje_exterior.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="geometria_soporte_eje_exterior_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="geometria_soporte_eje_interior">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/geometria_soporte_eje_interior.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="geometria_soporte_eje_interior_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="soporte_nuevo_izquierdo">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/soporte_nuevo_izquierdo.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="soporte_nuevo_izquierdo_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="soporte_nuevo_derecho">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/soporte_nuevo_derecho.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="soporte_nuevo_derecho_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="bateria_lipo_1100">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/bateria_lipo_1100.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="bateria_lipo_1100_color">
+        <color rgba="0.82 0.18 0.16 1.0" />
+      </material>
+    </visual>
+    <visual name="soporte_pi_bateria">
+      <origin xyz="-0.000000000 -0.000000000 -0.000000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/soporte_pi_bateria.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="soporte_pi_bateria_color">
+        <color rgba="0.7 0.72 0.75 1.0" />
+      </material>
+    </visual>
+  </link>
+  <link name="front_leg">
+    <inertial>
+      <origin xyz="0 0 -0.1" />
+      <mass value="0.095" />
+      <inertia ixx="0.00055" ixy="0" ixz="0" iyy="0.00055" iyz="0" izz="3e-05" />
+    </inertial>
+    <collision name="extensible_leg_proxy_bar">
+      <origin xyz="0 0 -0.0935" rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.187" radius="0.009000" />
+      </geometry>
+    </collision>
+    <collision name="extensible_leg_proxy_cap">
+      <origin xyz="0 0 -0.187" />
+      <geometry>
+        <sphere radius="0.009000" />
+      </geometry>
+    </collision>
+    <collision name="extensible_leg_proxy_cap">
+      <origin xyz="0 0 0" />
+      <geometry>
+        <sphere radius="0.009000" />
+      </geometry>
+    </collision>
+    <collision name="distal_pololu_951_ball_proxy">
+      <origin xyz="0 0 -0.1943" />
+      <geometry>
+        <sphere radius="0.0047625" />
+      </geometry>
+    </collision>
+    <collision name="distal_caster_mount_proxy">
+      <origin xyz="0 0 -0.19175" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01905 0.0121 0.0055" />
+      </geometry>
+    </collision>
+    <visual name="FrontStrut">
+      <origin xyz="-0.090000000 -0.000000000 -0.199000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/FrontStrut.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="FrontStrut_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+    <visual name="V50_Pololu951RetractV24">
+      <origin xyz="-0.090000000 -0.000000000 -0.199000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_Pololu951RetractV24.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_Pololu951RetractV24_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="V50_FrontMicroHornHub">
+      <origin xyz="-0.090000000 -0.000000000 -0.199000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_FrontMicroHornHub.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_FrontMicroHornHub_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="V50_FrontMicroHornArm">
+      <origin xyz="-0.090000000 -0.000000000 -0.199000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_FrontMicroHornArm.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_FrontMicroHornArm_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="Engranaje_inferior">
+      <origin xyz="-0.090000000 -0.000000000 -0.199000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/Engranaje_inferior.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Engranaje_inferior_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="Eje_retractil">
+      <origin xyz="-0.090000000 -0.000000000 -0.199000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/Eje_retractil.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Eje_retractil_color">
+        <color rgba=".65 .68 .72 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="motor_hip_left">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.003" />
+      <inertia ixx="2e-06" ixy="0" ixz="0" iyy="2e-06" iyz="0" izz="2e-06" />
+    </inertial>
+    <collision name="hip_pinion_proxy">
+      <origin xyz="0 -0.002 0" rpy="1.57079633 0 0" />
+      <geometry>
+        <cylinder radius="0.0069" length="0.0097" />
+      </geometry>
+    </collision>
+    <visual name="V50_HipMotorPinionLeft">
+      <origin xyz="-0.019000000 0.049650000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_HipMotorPinionLeft.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_HipMotorPinionLeft_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="HipLeftSpline25T">
+      <origin xyz="-0.019000000 0.049650000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/HipLeftSpline25T.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="HipLeftSpline25T_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="motor_hip_right">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.003" />
+      <inertia ixx="2e-06" ixy="0" ixz="0" iyy="2e-06" iyz="0" izz="2e-06" />
+    </inertial>
+    <collision name="hip_pinion_proxy">
+      <origin xyz="0 -0.002 0" rpy="1.57079633 0 0" />
+      <geometry>
+        <cylinder radius="0.0069" length="0.0097" />
+      </geometry>
+    </collision>
+    <visual name="V50_HipMotorPinionRight">
+      <origin xyz="-0.019000000 -0.049650000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_HipMotorPinionRight.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_HipMotorPinionRight_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+    <visual name="HipRightSpline25T">
+      <origin xyz="-0.019000000 -0.049650000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/HipRightSpline25T.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="HipRightSpline25T_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="motor_knee_left">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.003" />
+      <inertia ixx="2e-06" ixy="0" ixz="0" iyy="2e-06" iyz="0" izz="2e-06" />
+    </inertial>
+    <collision name="knee_pinion_proxy">
+      <origin xyz="0 0 0" rpy="1.57079633 0 0" />
+      <geometry>
+        <cylinder radius="0.0069" length="0.0097" />
+      </geometry>
+    </collision>
+    <visual name="izquierda_pinon_motor">
+      <origin xyz="0.029608934 0.104200000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_pinon_motor.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_pinon_motor_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="izquierda_KneeLeftSpline25T">
+      <origin xyz="0.029608934 0.104200000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_KneeLeftSpline25T.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_KneeLeftSpline25T_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="motor_knee_right">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.003" />
+      <inertia ixx="2e-06" ixy="0" ixz="0" iyy="2e-06" iyz="0" izz="2e-06" />
+    </inertial>
+    <collision name="knee_pinion_proxy">
+      <origin xyz="0 0 0" rpy="1.57079633 0 0" />
+      <geometry>
+        <cylinder radius="0.0069" length="0.0097" />
+      </geometry>
+    </collision>
+    <visual name="derecha_pinon_motor">
+      <origin xyz="0.029608934 -0.104200000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_pinon_motor.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_pinon_motor_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="derecha_KneeRightSpline25T">
+      <origin xyz="0.029608934 -0.104200000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_KneeRightSpline25T.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_KneeRightSpline25T_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="shin_left">
+    <inertial>
+      <origin xyz="-0.009000000 -0.040000000 -0.075000000" />
+      <mass value="0.075" />
+      <inertia ixx="0.0002" ixy="0" ixz="0" iyy="0.0002" iyz="0" izz="5e-05" />
+    </inertial>
+    <collision name="tibia_recta_proxy">
+      <origin xyz="-0.003900000 -0.040500000 -0.059000000" />
+      <geometry>
+        <cylinder length="0.124" radius="0.0075" />
+      </geometry>
+    </collision>
+    <collision name="tibia_articulacion_proxy">
+      <origin xyz="-0.003900000 -0.040500000 0.000000000" />
+      <geometry>
+        <sphere radius="0.0075" />
+      </geometry>
+    </collision>
+    <collision name="pie_petg_proxy">
+      <origin xyz="-0.010370000 -0.038110000 -0.118030000" />
+      <geometry>
+        <box size="0.0345 0.0162 0.0297" />
+      </geometry>
+    </collision>
+    <collision name="suela_petg_proxy">
+      <origin xyz="-0.010630000 -0.038080000 -0.134120000" />
+      <geometry>
+        <box size="0.0320 0.0160 0.0080" />
+      </geometry>
+    </collision>
+    <visual name="izquierda_pierna_inferior">
+      <origin xyz="0.005000000 0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_pierna_inferior.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_pierna_inferior_color">
+        <color rgba="0.68 0.75 0.80 1" />
+      </material>
+    </visual>
+    <visual name="izquierda_pie">
+      <origin xyz="0.005000000 0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_pie.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_pie_color">
+        <color rgba="0.68 0.75 0.80 1" />
+      </material>
+    </visual>
+    <visual name="izquierda_suela">
+      <origin xyz="0.005000000 0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_suela.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_suela_color">
+        <color rgba="0.20 0.48 0.44 1" />
+      </material>
+    </visual>
+    <visual name="izquierda_engranaje">
+      <origin xyz="0.005000000 0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_engranaje.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_engranaje_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="izquierda_eje">
+      <origin xyz="0.005000000 0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_eje.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_eje_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="izquierda_casquillo_interior">
+      <origin xyz="0.005000000 0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_casquillo_interior.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_casquillo_interior_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="izquierda_casquillo_exterior">
+      <origin xyz="0.005000000 0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_casquillo_exterior.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_casquillo_exterior_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="izquierda_retencion_eje">
+      <origin xyz="0.005000000 0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_retencion_eje.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_retencion_eje_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="izquierda_arandela_engranaje">
+      <origin xyz="0.005000000 0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_arandela_engranaje.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_arandela_engranaje_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="shin_right">
+    <inertial>
+      <origin xyz="-0.009000000 0.040000000 -0.075000000" />
+      <mass value="0.075" />
+      <inertia ixx="0.0002" ixy="0" ixz="0" iyy="0.0002" iyz="0" izz="5e-05" />
+    </inertial>
+    <collision name="tibia_recta_proxy">
+      <origin xyz="-0.003900000 0.040500000 -0.059000000" />
+      <geometry>
+        <cylinder length="0.124" radius="0.0075" />
+      </geometry>
+    </collision>
+    <collision name="tibia_articulacion_proxy">
+      <origin xyz="-0.003900000 0.040500000 0.000000000" />
+      <geometry>
+        <sphere radius="0.0075" />
+      </geometry>
+    </collision>
+    <collision name="pie_petg_proxy">
+      <origin xyz="-0.010370000 0.038110000 -0.118030000" />
+      <geometry>
+        <box size="0.0345 0.0162 0.0297" />
+      </geometry>
+    </collision>
+    <collision name="suela_petg_proxy">
+      <origin xyz="-0.010630000 0.038080000 -0.134120000" />
+      <geometry>
+        <box size="0.0320 0.0160 0.0080" />
+      </geometry>
+    </collision>
+    <visual name="derecha_pierna_inferior">
+      <origin xyz="0.005000000 -0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_pierna_inferior.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_pierna_inferior_color">
+        <color rgba="0.68 0.75 0.80 1" />
+      </material>
+    </visual>
+    <visual name="derecha_pie">
+      <origin xyz="0.005000000 -0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_pie.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_pie_color">
+        <color rgba="0.68 0.75 0.80 1" />
+      </material>
+    </visual>
+    <visual name="derecha_suela">
+      <origin xyz="0.005000000 -0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_suela.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_suela_color">
+        <color rgba="0.20 0.48 0.44 1" />
+      </material>
+    </visual>
+    <visual name="derecha_engranaje">
+      <origin xyz="0.005000000 -0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_engranaje.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_engranaje_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="derecha_eje">
+      <origin xyz="0.005000000 -0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_eje.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_eje_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="derecha_casquillo_interior">
+      <origin xyz="0.005000000 -0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_casquillo_interior.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_casquillo_interior_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="derecha_casquillo_exterior">
+      <origin xyz="0.005000000 -0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_casquillo_exterior.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_casquillo_exterior_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="derecha_retencion_eje">
+      <origin xyz="0.005000000 -0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_retencion_eje.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_retencion_eje_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="derecha_arandela_engranaje">
+      <origin xyz="0.005000000 -0.078000000 -0.141635000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_arandela_engranaje.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_arandela_engranaje_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="thigh_left">
+    <inertial>
+      <origin xyz="-0.024000000 -0.020000000 -0.052000000" />
+      <mass value="0.14" />
+      <inertia ixx="0.00045" ixy="0" ixz="0" iyy="0.00045" iyz="0" izz="0.00015" />
+    </inertial>
+    <collision name="cuello_recto_proxy">
+      <origin xyz="0.000000000 -0.021000000 -0.042682500" rpy="2.757403266 0.000000000 0.000000000" />
+      <geometry>
+        <cylinder length="0.064032829" radius="0.008" />
+      </geometry>
+    </collision>
+    <collision name="servo_rodilla_atras_proxy">
+      <origin xyz="-0.033608934 -0.015200000 -0.072365000" />
+      <geometry>
+        <box size="0.040000 0.037200 0.020000" />
+      </geometry>
+    </collision>
+    <visual name="V50_HipServoLeftOutputLink">
+      <origin xyz="0.005000000 0.045000000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_HipServoLeftOutputLink.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_HipServoLeftOutputLink_color">
+        <color rgba="0.22 0.26 0.31 1" />
+      </material>
+    </visual>
+    <visual name="llave_cadera_izquierda">
+      <origin xyz="0.005000000 0.045000000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/llave_cadera_izquierda.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="llave_cadera_izquierda_color">
+        <color rgba="0.30 0.35 0.40 1" />
+      </material>
+    </visual>
+    <visual name="izquierda_pierna_superior">
+      <origin xyz="0.005000000 0.045000000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_pierna_superior.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_pierna_superior_color">
+        <color rgba="0.68 0.75 0.80 1" />
+      </material>
+    </visual>
+    <visual name="izquierda_tapa_pinon">
+      <origin xyz="0.005000000 0.045000000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_tapa_pinon.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_tapa_pinon_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="izquierda_KneeLeftCase">
+      <origin xyz="0.005000000 0.045000000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_KneeLeftCase.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_KneeLeftCase_color">
+        <color rgba="0.22 0.26 0.31 1" />
+      </material>
+    </visual>
+    <visual name="izquierda_KneeLeftMountEars">
+      <origin xyz="0.005000000 0.045000000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_KneeLeftMountEars.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_KneeLeftMountEars_color">
+        <color rgba="0.22 0.26 0.31 1" />
+      </material>
+    </visual>
+    <visual name="izquierda_KneeLeftBoss">
+      <origin xyz="0.005000000 0.045000000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_KneeLeftBoss.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_KneeLeftBoss_color">
+        <color rgba="0.22 0.26 0.31 1" />
+      </material>
+    </visual>
+    <visual name="izquierda_KneeLeftCableExit">
+      <origin xyz="0.005000000 0.045000000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/izquierda_KneeLeftCableExit.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="izquierda_KneeLeftCableExit_color">
+        <color rgba="0.22 0.26 0.31 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="thigh_right">
+    <inertial>
+      <origin xyz="-0.024000000 0.020000000 -0.052000000" />
+      <mass value="0.14" />
+      <inertia ixx="0.00045" ixy="0" ixz="0" iyy="0.00045" iyz="0" izz="0.00015" />
+    </inertial>
+    <collision name="cuello_recto_proxy">
+      <origin xyz="0.000000000 0.021000000 -0.042682500" rpy="-2.757403266 0.000000000 0.000000000" />
+      <geometry>
+        <cylinder length="0.064032829" radius="0.008" />
+      </geometry>
+    </collision>
+    <collision name="servo_rodilla_atras_proxy">
+      <origin xyz="-0.033608934 0.015200000 -0.072365000" />
+      <geometry>
+        <box size="0.040000 0.037200 0.020000" />
+      </geometry>
+    </collision>
+    <visual name="V50_HipServoRightOutputLink">
+      <origin xyz="0.005000000 -0.045000000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/V50_HipServoRightOutputLink.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="V50_HipServoRightOutputLink_color">
+        <color rgba="0.22 0.26 0.31 1" />
+      </material>
+    </visual>
+    <visual name="llave_cadera_derecha">
+      <origin xyz="0.005000000 -0.045000000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/llave_cadera_derecha.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="llave_cadera_derecha_color">
+        <color rgba="0.30 0.35 0.40 1" />
+      </material>
+    </visual>
+    <visual name="derecha_pierna_superior">
+      <origin xyz="0.005000000 -0.045000000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_pierna_superior.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_pierna_superior_color">
+        <color rgba="0.68 0.75 0.80 1" />
+      </material>
+    </visual>
+    <visual name="derecha_tapa_pinon">
+      <origin xyz="0.005000000 -0.045000000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_tapa_pinon.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_tapa_pinon_color">
+        <color rgba="0.23 0.27 0.32 1" />
+      </material>
+    </visual>
+    <visual name="derecha_KneeRightCase">
+      <origin xyz="0.005000000 -0.045000000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_KneeRightCase.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_KneeRightCase_color">
+        <color rgba="0.22 0.26 0.31 1" />
+      </material>
+    </visual>
+    <visual name="derecha_KneeRightMountEars">
+      <origin xyz="0.005000000 -0.045000000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_KneeRightMountEars.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_KneeRightMountEars_color">
+        <color rgba="0.22 0.26 0.31 1" />
+      </material>
+    </visual>
+    <visual name="derecha_KneeRightBoss">
+      <origin xyz="0.005000000 -0.045000000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_KneeRightBoss.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_KneeRightBoss_color">
+        <color rgba="0.22 0.26 0.31 1" />
+      </material>
+    </visual>
+    <visual name="derecha_KneeRightCableExit">
+      <origin xyz="0.005000000 -0.045000000 -0.214000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/derecha_KneeRightCableExit.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="derecha_KneeRightCableExit_color">
+        <color rgba="0.22 0.26 0.31 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="caster_left">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="2e-06" ixy="0" ixz="0" iyy="2e-06" iyz="0" izz="2e-06" />
+    </inertial>
+    <collision name="pololu_951_ball_proxy">
+      <origin xyz="0 0 0" />
+      <geometry>
+        <sphere radius="0.0047625" />
+      </geometry>
+    </collision>
+    <visual name="bola_0">
+      <origin xyz="-0.112000000 0.027000000 -0.193250000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/bola_0.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="bola_0_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="caster_right">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.001" />
+      <inertia ixx="2e-06" ixy="0" ixz="0" iyy="2e-06" iyz="0" izz="2e-06" />
+    </inertial>
+    <collision name="pololu_951_ball_proxy">
+      <origin xyz="0 0 0" />
+      <geometry>
+        <sphere radius="0.0047625" />
+      </geometry>
+    </collision>
+    <visual name="bola_1">
+      <origin xyz="-0.112000000 -0.027000000 -0.193250000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://eltronico/meshes/cad_actual/bola_1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="bola_1_color">
+        <color rgba=".2 .25 .3 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="pi_collision_guard">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.002" />
+      <inertia ixx="2e-06" ixy="0" ixz="0" iyy="2e-06" iyz="0" izz="2e-06" />
+    </inertial>
+    <collision name="raspberry_pi4_collision_proxy">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.088 0.057 0.018" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="pi_collision_guard_fixed" type="fixed">
+    <parent link="base" />
+    <child link="pi_collision_guard" />
+    <origin xyz="-.0575 -.00125 .2295" rpy="0 0 0" />
+  </joint>
+  <joint name="hip_left" type="continuous">
+    <parent link="base" />
+    <child link="thigh_left" />
+    <origin xyz="-0.005000 -0.045000 0.214000" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit effort="2.0" velocity="2.0" />
+  </joint>
+  <joint name="hip_right" type="continuous">
+    <parent link="base" />
+    <child link="thigh_right" />
+    <origin xyz="-0.005000 0.045000 0.214000" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit effort="2.0" velocity="2.0" />
+  </joint>
+  <joint name="knee_left" type="continuous">
+    <parent link="thigh_left" />
+    <child link="shin_left" />
+    <origin xyz="0.000000 -0.033000 -0.072365" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit effort="1.5" velocity="2.0" />
+  </joint>
+  <joint name="knee_right" type="continuous">
+    <parent link="thigh_right" />
+    <child link="shin_right" />
+    <origin xyz="0.000000 0.033000 -0.072365" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit effort="1.5" velocity="2.0" />
+  </joint>
+  <joint name="front_pitch" type="revolute">
+    <parent link="base" />
+    <child link="front_leg" />
+    <origin xyz="0.090 0 0.199" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="0" upper="1.5707963267948966" effort="0.18" velocity="0.8" />
+  </joint>
+  <joint name="motor_hip_left_joint" type="continuous">
+    <!-- Relacion geometrica motor/salida 3:1; pendiente validar sentido y dinamica en Gazebo. -->
+    <mimic joint="hip_left" multiplier="3.0" offset="0.0" />
+    <parent link="base" />
+    <child link="motor_hip_left" />
+    <origin xyz="0.019000 -0.049650 0.214000" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.2157" velocity="12.56" />
+  </joint>
+  <joint name="motor_hip_right_joint" type="continuous">
+    <!-- Relacion geometrica motor/salida 3:1; pendiente validar sentido y dinamica en Gazebo. -->
+    <mimic joint="hip_right" multiplier="3.0" offset="0.0" />
+    <parent link="base" />
+    <child link="motor_hip_right" />
+    <origin xyz="0.019000 0.049650 0.214000" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.2157" velocity="12.56" />
+  </joint>
+  <joint name="motor_knee_left_joint" type="continuous">
+    <!-- Relacion geometrica motor/salida 3:1; pendiente validar sentido y dinamica en Gazebo. -->
+    <mimic joint="knee_left" multiplier="3.0" offset="0.0" />
+    <parent link="thigh_left" />
+    <child link="motor_knee_left" />
+    <origin xyz="-0.024608934 -0.059200000 -0.072365000" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.2157" velocity="12.56" />
+  </joint>
+  <joint name="motor_knee_right_joint" type="continuous">
+    <!-- Relacion geometrica motor/salida 3:1; pendiente validar sentido y dinamica en Gazebo. -->
+    <mimic joint="knee_right" multiplier="3.0" offset="0.0" />
+    <parent link="thigh_right" />
+    <child link="motor_knee_right" />
+    <origin xyz="-0.024608934 0.059200000 -0.072365000" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.2157" velocity="12.56" />
+  </joint>
+  <joint name="caster_left_roll" type="continuous">
+    <parent link="base" />
+    <child link="caster_left" />
+    <origin xyz=".112 -0.027 .19325" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.02" velocity="30" />
+  </joint>
+  <joint name="caster_right_roll" type="continuous">
+    <parent link="base" />
+    <child link="caster_right" />
+    <origin xyz=".112 0.027 .19325" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.02" velocity="30" />
+  </joint>
+
+  <!-- Interfaces de ros2_control para Gazebo Harmonic.
+       Se mandan consignas a las 5 articulaciones de salida.
+       Los 4 ejes de motor son imitadores 3:1, solo para observar su estado. -->
+  <ros2_control name="GazeboSimSystem" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+    <joint name="hip_left">
+      <command_interface name="position" />
+      <state_interface name="position" />
+      <state_interface name="velocity" />
+    </joint>
+    <joint name="knee_left">
+      <command_interface name="position" />
+      <state_interface name="position" />
+      <state_interface name="velocity" />
+    </joint>
+    <joint name="hip_right">
+      <command_interface name="position" />
+      <state_interface name="position" />
+      <state_interface name="velocity" />
+    </joint>
+    <joint name="knee_right">
+      <command_interface name="position" />
+      <state_interface name="position" />
+      <state_interface name="velocity" />
+    </joint>
+    <joint name="front_pitch">
+      <command_interface name="position" />
+      <state_interface name="position" />
+      <state_interface name="velocity" />
+    </joint>
+    <joint name="motor_hip_left_joint">
+      <state_interface name="position" />
+      <state_interface name="velocity" />
+    </joint>
+    <joint name="motor_knee_left_joint">
+      <state_interface name="position" />
+      <state_interface name="velocity" />
+    </joint>
+    <joint name="motor_hip_right_joint">
+      <state_interface name="position" />
+      <state_interface name="velocity" />
+    </joint>
+    <joint name="motor_knee_right_joint">
+      <state_interface name="position" />
+      <state_interface name="velocity" />
+    </joint>
+  </ros2_control>
+
+  <gazebo>
+    <plugin filename="libgz_ros2_control-system.so"
+            name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <!-- El launch resuelve esta ruta a un archivo absoluto al iniciar Gazebo. -->
+      <parameters>$(find eltronico)/config/controllers.yaml</parameters>
+      <controller_manager_name>controller_manager</controller_manager_name>
+      <hold_joints>true</hold_joints>
+      <!-- Ganancia del seguimiento de posiciones (valor anterior por defecto: 0.1).
+           Se usa 0.5 para ensayos; verificar estabilidad y velocidad real. -->
+      <position_proportional_gain>0.5</position_proportional_gain>
+    </plugin>
+  </gazebo>
+
+
+  <!-- Odometría 3D de simulación para roll, pitch, yaw y posición del torso.
+       No sustituye a la IMU MPU6050 del robot físico. -->
+  <gazebo>
+    <plugin filename="gz-sim-odometry-publisher-system"
+            name="gz::sim::systems::OdometryPublisher">
+      <odom_topic>/eltronico/odom</odom_topic>
+      <odom_publish_frequency>50</odom_publish_frequency>
+      <dimensions>3</dimensions>
+    </plugin>
+  </gazebo>
+
+  <!-- Contactos de ruedas con escalones. Los nombres de colisión se toman
+       de los elementos originales de cada link del URDF. -->
+  <gazebo reference="caster_left">
+    <sensor name="caster_left_contact" type="contact">
+      <always_on>true</always_on>
+      <update_rate>50</update_rate>
+      <topic>/eltronico/caster_left/contacts</topic>
+      <contact><collision>pololu_951_ball_proxy</collision></contact>
+    </sensor>
+  </gazebo>
+  <gazebo reference="caster_right">
+    <sensor name="caster_right_contact" type="contact">
+      <always_on>true</always_on>
+      <update_rate>50</update_rate>
+      <topic>/eltronico/caster_right/contacts</topic>
+      <contact><collision>pololu_951_ball_proxy</collision></contact>
+    </sensor>
+  </gazebo>
+</robot>

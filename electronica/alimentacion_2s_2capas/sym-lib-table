@@ -1,0 +1,4 @@
+(sym_lib_table (version 7)
+ (lib (name "eltronico") (type "KiCad") (uri "${KIPRJMOD}/eltronico.kicad_sym") (options "") (descr "Project pinned symbol"))
+ (lib (name "basicos") (type "KiCad") (uri "${KIPRJMOD}/basicos.kicad_sym") (options "") (descr "Project pinned symbol"))
+)

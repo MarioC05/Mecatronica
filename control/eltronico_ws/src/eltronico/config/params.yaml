@@ -1,0 +1,11 @@
+eltronico:
+  ros__parameters:
+    frequency: 50.0
+    behavior: idle
+    step_number: 1
+    # Solo usar true para probar la estimación de proximidad en Gazebo.
+    # false impide el plegado sin un medidor fiable de distancia al escalón.
+    climb_allow_geometric_clearance: false
+    # Sólo para comprobar movimiento articular si falla la odometría.
+    # SIN estabilización de orientación. Nunca usar en el robot físico.
+    walk_open_loop_test: false

@@ -1,0 +1,15 @@
+# Activa el protocolo NEC en el receptor gpio-ir al arrancar la Raspberry Pi.
+# Instalar:  sudo cp eltronico-ir-nec.service /etc/systemd/system/
+#            sudo systemctl daemon-reload && sudo systemctl enable --now eltronico-ir-nec
+[Unit]
+Description=Eltronico: protocolo NEC en el receptor IR gpio-ir
+After=systemd-udev-settle.service
+Wants=systemd-udev-settle.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'ok=1; for r in /sys/class/rc/rc*; do if grep -qs gpio_ir_recv "$$r"/input*/name; then echo nec > "$$r/protocols" && ok=0; fi; done; exit $$ok'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

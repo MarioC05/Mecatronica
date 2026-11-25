@@ -1,0 +1,50 @@
+(footprint "cable_2p_5mm"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+(attr exclude_from_pos_files exclude_from_bom)
+  (descr "Solder wires directly, 1.6mm finished hole; + pin1 / GND pin2")
+
+  (property "Reference" "REF**" (at 0 -1.27 0)
+    (layer "F.SilkS")
+    (uuid "cd8ab744-3699-4737-aa08-7f240370e201")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "cable_2p_5mm" (at 0 1.27 0)
+    (layer "F.Fab")
+    (uuid "7032b385-724b-41f3-81c1-e37a1d7081b5")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "5bcc0470-074e-4760-8ae5-c47709e8ed42")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -2.2 -2.2)
+    (end 2.2 7.2)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "a86cdb72-84c8-491a-8989-c8d6fced7d00")
+  )
+
+  (pad "1" thru_hole circle
+    (at 0 0)
+    (size 3.8 3.8)
+    (drill 1.6)
+    (layers "*.Cu" "*.Mask")
+    (uuid "ddf9a423-a38a-4bd8-80a2-e4ae14b5a6bd")
+  )
+
+  (pad "2" thru_hole circle
+    (at 0 5)
+    (size 3.8 3.8)
+    (drill 1.6)
+    (layers "*.Cu" "*.Mask")
+    (uuid "06f82eb0-7488-4b3c-943b-5deaa15e04be")
+  )
+
+)
